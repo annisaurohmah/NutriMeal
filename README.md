@@ -10,7 +10,8 @@
 
 <h1> Overview Front End </h1>
 <h2> Home </h2>
-![2](https://github.com/annisaurohmah/NutriMeal/blob/master/assets/home.png)
+![home](https://github.com/annisaurohmah/NutriMeal/assets/114550589/c11d8bb4-baef-4d92-a883-764521594c90)
+
 
 <h2> Foodpage </h2>
 ![1](https://github.com/annisaurohmah/NutriMeal/assets/114550589/ec6bf31c-3430-45ac-87ef-26bf43ec5a99)
@@ -18,5 +19,5 @@
 <h2> Hasil Pencarian </h2>
 ![image](https://github.com/annisaurohmah/NutriMeal/assets/114550589/9838e75f-1b10-417c-bee9-600a40e3a8e3)
 
-<h3> Hasil Pencarian Resto </h3>
+<h2> Hasil Pencarian Resto </h2>
 ![image](https://github.com/annisaurohmah/NutriMeal/assets/114550589/c6b397be-d0f3-43e8-b04a-018de43e93d5)
