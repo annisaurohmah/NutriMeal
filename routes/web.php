@@ -26,6 +26,13 @@ Route::get('/foodpage', function () {
     return view('foodpage');
 })->name('foodpage');
 
+Route::post('/foodpage/result', function () {
+    return view('foodpage-result');
+})->name('result');
+Route::get('/foodpage/result/place', function () {
+    return view('result');
+})->name('result.place');
+
 Route::POST('/foodpage/result', [FilterController::class, 'getAverage'])->name('result');
 
 Route::get('/foodpage/result/{categoryId}/get-filter', [FilterController::class, 'getFilter']);
