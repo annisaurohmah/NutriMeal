@@ -10,6 +10,8 @@
 	--green: #3A7C5C;
     --light-green: #5E9C7F;
 	--cream: #EEDDD2;
+    --dark-cream: #E8D2C4;
+    --light: #9E9E9E;
 }
 
 .navbar {
@@ -43,9 +45,12 @@
 .sub-title {
     font-weight: 500;
     font-size: 1.2rem;
+}
+.sub-heading {
+    font-weight: 800;
+    font-size: 1.5rem;
 
 }
-
 .filterBox {
     background-color: var(--cream);
     padding: 1rem;
@@ -55,7 +60,8 @@
 
 .hero-header {
     background-color: var(--green);
-    padding: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
     width: 100%;
     color: var(--cream);
 }
@@ -66,13 +72,25 @@
     color: var(--green);
 
 }
+.work {
+    background-color: var(--green);
+    padding: 4rem;
+    width: 100%;
+    color: var(--green);
+
+}
+.text-cream {
+    color: var(--cream);
+}
 
 .about {
     background-color: var(--cream);
-    padding: 5rem;
+    padding: 3rem;
     width: 100%;
     color: var(--green);
 }
+
+
 
 input {
     box-sizing:border-box;border:0 solid --green;border-radius:5px;padding:0.5rem 1rem;font-size:1.2rem;}
