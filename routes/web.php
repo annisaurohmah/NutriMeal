@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\User\FilterController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +28,8 @@ Route::get('/foodpage', function () {
 Route::post('/foodpage/result', function () {
     return view('result');
 })->name('result');
+});
+
+Route::POST('/get-average', [FilterController::class, 'getAverage'])->name('getAveragePage');
+
+Route::get('/get-average/{categoryId}/get-filter', [FilterController::class, 'getFilter']);
