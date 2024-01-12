@@ -28,4 +28,4 @@ Route::get('/foodpage', function () {
 
 Route::POST('/foodpage/result', [FilterController::class, 'getAverage'])->name('result');
 
-Route::get('/get-average/{categoryId}/get-filter', [FilterController::class, 'getFilter']);
+Route::get('/foodpage/result/{categoryId}/get-filter', [FilterController::class, 'getFilter']);
