@@ -52,7 +52,7 @@ class FilterController extends Controller
             }
         }
         $menus = AverageResource::collection($data);
-        return view('welcome', compact('menus'));
+        return view('result', compact('menus'));
     }
 
     public function getFilter(String $categoryId){

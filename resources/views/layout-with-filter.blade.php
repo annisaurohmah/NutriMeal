@@ -18,19 +18,12 @@
                 @csrf
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="budget" class="form-label">Budget</label>
-                    <select class="form-select" id="budget" name="budget" required>
-                        <option value="" selected disabled hidden> Budget</option>
-                        <option value="1">Rp. 10.000 - Rp. 50.000</option>
-                        <option value="2">Rp. 50.000 - Rp. 100.000</option>
-                        <option value="3">Rp. 100.000 - Rp. 200.000</option>
-                        <option value="4">Rp. 200.000 - Rp. 500.000</option>
-                        <option value="5">Rp. 500.000 - Rp. 1.000.000</option>
-                    </select>
+                    <input type="text" class="form-control" id="budget" name="budget" placeholder="Tulis Budget">
                 </div>
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="activity" class="form-label">Activity</label>
-                    <select class="form-select" id="activity" name="activity" required>
-                        <option value="" selected disabled hidden>Aktivitas</option>
+                    <select class="form-select" id="activity" name="activity" data-placeholder="Aktivitas" required>
+                        <option></option>
                         <option value="1">Berat</option>
                         <option value="2">Sedang</option>
                         <option value="3">Ringan</option>
@@ -38,13 +31,13 @@
                 </div>
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="alergi" class="form-label">Alergi</label>
-                    <select class="form-select" id="alergi" name="alergi">
+                    <select class="form-select" id="alergi"  name="alergi" data-placeholder="Alergi" required multiple>
                         <option></option>
                     </select>
                 </div>
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="kandungan" class="form-label">Kandungan</label>
-                    <select class="form-select" id="kandungan" name="kandungan">
+                    <select class="form-select" id="kandungan" name="kandungan" name="kandungan" data-placeholder="Kandungan" required multiple>
                         <option></option>
                     </select>
                 </div>
