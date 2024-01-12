@@ -10,7 +10,7 @@
 
 <h1> Overview Front End </h1>
 <h2> Home </h2>
-![2](https://github.com/annisaurohmah/NutriMeal/assets/114550589/d0e820c4-8ed9-47a0-8836-ecdb8d896309)
+![2]([https://github.com/annisaurohmah/NutriMeal/assets/114550589/d0e820c4-8ed9-47a0-8836-ecdb8d896309](https://github.com/annisaurohmah/NutriMeal/blob/master/assets/home.png))
 
 <h2> Foodpage </h2>
 ![1](https://github.com/annisaurohmah/NutriMeal/assets/114550589/ec6bf31c-3430-45ac-87ef-26bf43ec5a99)
