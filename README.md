@@ -1,4 +1,4 @@
-<h1> Initiazion <h1>
+<h1> Initiation <h1>
 <h2>Untuk menjalankan project ini memerlukan beberapa inisiasi, yaitu:</h2>
 <h4>1. Mengaktifkan ekstension Sodium pada php.ini dengan menghilangkan tanda ";" didepan kata extension=sodium</h4>
 <h4>2. Menginstall 'composer require kreait/firebase-php' di terminal</h4>
@@ -21,3 +21,13 @@
 
 <h2> Hasil Pencarian Resto </h2>
 ![Web capture_12-1-2024_214554_127 0 0 1](https://github.com/annisaurohmah/NutriMeal/assets/114267064/627a962e-0e3b-4c2e-ae25-c1002449e10f)
+
+<h5> Project by Cobadulu </h5>
+<ul>
+    <li> Raditya Putri Angelita </li>
+    <li> Shyra Athaya </li>
+    <li> Praneta Dwi Indarti </li>
+    <li> Annisa Urohmah </li>
+</ul>
+
+<p> Stage 2 HackFest 2024 </p>
