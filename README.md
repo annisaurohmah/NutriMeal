@@ -17,7 +17,7 @@
 ![1](https://github.com/annisaurohmah/NutriMeal/assets/114550589/ec6bf31c-3430-45ac-87ef-26bf43ec5a99)
 
 <h2> Hasil Pencarian </h2>
-![image](https://github.com/annisaurohmah/NutriMeal/assets/114550589/9838e75f-1b10-417c-bee9-600a40e3a8e3)
+![Web capture_12-1-2024_214530_127 0 0 1](https://github.com/annisaurohmah/NutriMeal/assets/114267064/f1376b4f-67cb-4494-9301-03d5f38bd44b)
 
 <h2> Hasil Pencarian Resto </h2>
-![image](https://github.com/annisaurohmah/NutriMeal/assets/114550589/c6b397be-d0f3-43e8-b04a-018de43e93d5)
+![Web capture_12-1-2024_214554_127 0 0 1](https://github.com/annisaurohmah/NutriMeal/assets/114267064/627a962e-0e3b-4c2e-ae25-c1002449e10f)
