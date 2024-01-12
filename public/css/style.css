@@ -51,6 +51,19 @@
     font-size: 1.5rem;
 
 }
+
+.bottom {
+    background-color: var(--cream);
+    padding: 6rem;
+    width: 100%;
+    color: var(--cream);
+
+}
+
+.text-green {
+    color: var(--green);
+    text-decoration: none;
+}
 .filterBox {
     background-color: var(--cream);
     padding: 1rem;
@@ -90,6 +103,13 @@
     color: var(--green);
 }
 
+
+footer{
+    background-color: var(--cream);
+    padding: 0.5rem;
+    padding-inline: 1rem;
+    width: 100%;
+}
 
 
 input {
