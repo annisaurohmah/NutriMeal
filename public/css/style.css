@@ -29,6 +29,11 @@
     color: var(--light-green);
 }
 
+.navbar .navbar-nav .nav-link.active, .navbar-nav .nav-link.show  {
+    color: var(--green);
+    border-bottom: 3px solid var(--green);
+
+}
 .navbar-brand {
     font-weight: 600;
     font-size: 1.5rem;
@@ -48,14 +53,46 @@
 }
 .sub-heading {
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1rem;
 
+}
+
+.bottom, .result{
+    background-color: var(--cream);
+    padding: 6rem;
+    width: 100%;
+    color: var(--cream);
+
+}
+
+.text-green {
+    color: var(--green);
+    text-decoration: none;
+}
+
+label {
+    font-weight: 800;
+    font-size: 1.2rem;
 }
 .filterBox {
     background-color: var(--cream);
     padding: 1rem;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.filterBox .form-select {
+    border-radius: 5px;
+    border: 1px solid var(--green);
+    background-color: var(--cream);
+}
+
+.filterBox .form-select select option:disabled {
+    color: var(--light);
+}
+
+.filterBox .form-select:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 0.25rem var(--light-green);
 }
 
 .hero-header {
@@ -86,10 +123,22 @@
 .about {
     background-color: var(--cream);
     padding: 3rem;
+    padding-top: 1rem;
     width: 100%;
     color: var(--green);
 }
 
+.bg-cream {
+    background-color: var(--cream);
+}
+
+
+footer{
+    background-color: var(--cream);
+    padding: 0.5rem;
+    padding-inline: 1rem;
+    width: 100%;
+}
 
 
 input {
