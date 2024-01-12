@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
-Route::get('/get-average', [FilterController::class, 'getAverage']);
+Route::POST('/get-average', [FilterController::class, 'getAverage'])->name('getAveragePage');
 
 Route::get('/get-average/{categoryId}/get-filter', [FilterController::class, 'getFilter']);
 

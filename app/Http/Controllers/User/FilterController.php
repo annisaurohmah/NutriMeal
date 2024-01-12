@@ -22,8 +22,9 @@ class FilterController extends Controller
         $this->categoryRef = app('firebase.firestore')->database()->collection('categories');
     }
 
-    public function getAverage(){
-        $inputHarga = 7000;
+    public function getAverage(Request $request){
+        $inputHarga = $request->budget;
+        $data = [];
         $componentQueries = $this->categoryRef
         ->documents();
         foreach ($componentQueries as $document) {
