@@ -17,6 +17,7 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
 </head>
@@ -56,4 +57,5 @@
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha256-tdNm2j9GbxFWUON/krcMIR5aS30st3xRYpk6DRHq0q4=" crossorigin="anonymous"></script>
 <script type="module" src="{{ asset('js/user/components.js') }}"></script>
+<script type="module" src="{{ asset('js/user/category-page.js') }}"></script>
 </html>

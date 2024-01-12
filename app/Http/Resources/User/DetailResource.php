@@ -14,6 +14,13 @@ class DetailResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return [
+            'menu_id' => $this->menu_id,
+            'nama' => $this->nama,
+            'harga' => $this->harga,
+            'restaurant_id' => $this->restaurant_id,
+            'nama_restaurant' => $this->nama_restaurant,
+            'alamat_restaurant' => $this->alamat_restaurant,
+        ];
     }
 }

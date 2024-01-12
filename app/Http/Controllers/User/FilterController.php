@@ -13,6 +13,8 @@ class FilterController extends Controller
     protected $menusRef;
     protected $componentsRef;
     protected $categoryRef;
+    protected $dataKandungan = [];
+    protected $dataAlergi = [];
 
     public function __construct()
     {
@@ -23,6 +25,8 @@ class FilterController extends Controller
     }
 
     public function getAverage(Request $request){
+        $this->dataKandungan [] = $request->kandungan;
+        $this->dataAlergi []= $request->alergi;
         $inputHarga = $request->budget;
         $data = [];
         $componentQueries = $this->categoryRef
@@ -52,15 +56,15 @@ class FilterController extends Controller
             }
         }
         $menus = AverageResource::collection($data);
-        return view('result', compact('menus'));
+        return view('foodpage-result', compact('menus'));
     }
 
     public function getFilter(String $categoryId){
-        $inputBahan = ['Mie'];
-        $inputAlergi = [];
+        dd($this->dataKandungan);
         $idBahan = [];
         $idAlergi = [];
         $data = [];
+        $categoryName = app('firebase.firestore')->database()->collection('categories')->document($categoryId)->snapshot()->data()['nama'];
         if (!empty($inputBahan)) {
             $idBahan = $this->getIdBahan($inputBahan);
         }
@@ -131,7 +135,7 @@ class FilterController extends Controller
             }
         }
         $menus = DetailResource::collection($data);
-        return view('nutrimeal-trial.index', compact('menus'));
+        return view('result', compact('menus'), ['categoryName' => $categoryName]);
     }
 
     public function getIdBahan(Array $inputBahan){

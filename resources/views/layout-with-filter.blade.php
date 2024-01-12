@@ -1,6 +1,4 @@
 @extends('layout-no-filter')
-
-
 @section('filter')
 <div class="hero-header">
         <div class="container px-lg-5">
@@ -10,7 +8,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="filter">
         <div class="filterBox container-xxl mx-auto">
@@ -31,13 +28,13 @@
                 </div>
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="alergi" class="form-label">Alergi</label>
-                    <select class="form-select" id="alergi"  name="alergi" data-placeholder="Alergi" required multiple>
+                    <select class="form-select" id="alergi"  name="alergi[]" data-placeholder="Alergi" multiple>
                         <option></option>
                     </select>
                 </div>
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="kandungan" class="form-label">Kandungan</label>
-                    <select class="form-select" id="kandungan" name="kandungan" name="kandungan" data-placeholder="Kandungan" required multiple>
+                    <select class="form-select" id="kandungan" name="kandungan[]" data-placeholder="Kandungan" multiple>
                         <option></option>
                     </select>
                 </div>
@@ -49,6 +46,3 @@
     </div>
 
 @endsection
-
-
-<script type="module" src="{{ asset('js/user/components.js') }}"></script>

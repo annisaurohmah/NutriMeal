@@ -14,6 +14,10 @@ class AverageResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return [
+            'category_id' => $this->category_id,
+            'nama' => $this->nama,
+            'harga_rata_rata' => $this->harga_rata_rata,
+        ];
     }
 }

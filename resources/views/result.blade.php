@@ -2,13 +2,13 @@
 
 @section('content')
 <div class="p-5 bg-cream d-flex align-items-center justify-content-start">
-        <button class="btn btn-success"><i class="fa fa-arrow-left"></i> Back</button>
-        <div class="text-center mx-auto">
-            <h3 class="text-green">Rendang</h2>
-        </div>
+    <button class="btn btn-success" id="backToCategorialPage" type="button"><i class="fa fa-arrow-left"></i>Back</button>
+    <div class="text-center mx-auto">
+        <h3 class="text-green">{{ $categoryName }}</h2>
+    </div>
 </div>
+@foreach ($menus as $menu)
 <div class="bg-cream p-5 justify-content-center">
-
     <div class="card mb-3" style="max-width: 100%;">
       <div class="row g-0">
         <div class="col-md-3">
@@ -16,16 +16,15 @@
         </div>
         <div class="col-md-9">
           <div class="card-body ">
-            <h5 class="card-title">Rm Padang sabana Murah 3 - UGM</h5>
-            <p class="card-text text-green">Rp15.000</p>
-            <p class="card-text text-green"><small>Gg. Swakarya, Kocoran, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281 </small></p>
+            <h4 class="card-title">{{ $menu['nama'] }}</h5>
+            <h5 class="card-title">{{ $menu['nama_restaurant'] }}</h5>
+            <p class="card-text text-green">Rp{{ $menu['harga'] }}</p>
+            <p class="card-text text-green"><small>{{ $menu['alamat_restaurant'] }}</small></p>
           </div>
         </div>
       </div>
     </div>
-
 </div>
-
-
+@endforeach
 
 @endsection

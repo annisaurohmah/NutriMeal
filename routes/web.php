@@ -22,17 +22,13 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+
 Route::get('/foodpage', function () {
     return view('foodpage');
 })->name('foodpage');
 
-Route::post('/foodpage/result', function () {
-    return view('foodpage-result');
-})->name('result');
-Route::get('/foodpage/result/place', function () {
-    return view('result');
-})->name('result.place');
-
 Route::POST('/foodpage/result', [FilterController::class, 'getAverage'])->name('result');
 
-Route::get('/foodpage/result/{categoryId}/get-filter', [FilterController::class, 'getFilter']);
+Route::POST('/foodpage/send-data', [FilterController::class, 'setDataKandunganAlergi'])->name('setDataKandunganAlergi');
+
+Route::get('/foodpage/result/{categoryId}/place', [FilterController::class, 'getFilter'])->name('result.place');
