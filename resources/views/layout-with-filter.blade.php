@@ -56,3 +56,6 @@
     </div>
 
 @endsection
+
+
+<script type="module" src="{{ asset('js/user/components.js') }}"></script>
