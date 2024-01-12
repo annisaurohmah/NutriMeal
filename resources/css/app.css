@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--light-purple: #574f7d;
+	--purple: #503a65;
+    --dark-purple : #3c2a4d;
+	--light-grey: #95adbe;
+	--light: #e0f0ea;
+}
+
+.navbar {
+    background-color: #503a65;
+    padding: 0.5rem 1rem;
+}
+nav {
+    background-color: #503a65;
+}

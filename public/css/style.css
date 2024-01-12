@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,100&display=swap%27');
+
+* {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--green: #3A7C5C;
+    --light-green: #5E9C7F;
+	--cream: #EEDDD2;
+}
+
+.navbar {
+    background-color: var(--cream);
+    padding: 0.5rem 1rem;
+    color: var(--green);
+}
+.navbar a {
+    color: var(--green);
+}
+.navbar a:hover {
+    color: var(--light-green);
+}
+.navbar .active {
+    color: var(--light-green);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.nav-link {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 2.8rem;;
+}
+.sub-title {
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
+.filterBox {
+    background-color: var(--cream);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.btn-green {
+    background-color: var(--green);
+    border-radius: 5px;
+    color: var(--green);
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.hero-header {
+    background-color: var(--green);
+    padding: 5rem;
+    width: 100%;
+    color: var(--cream);
+}
+
+.about {
+    background-color: var(--cream);
+    padding: 5rem;
+    width: 100%;
+    color: var(--green);
+}
+
+input {
+    box-sizing:border-box;border:0 solid --green;border-radius:5px;padding:0.5rem 1rem;font-size:1.2rem;}
