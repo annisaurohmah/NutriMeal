@@ -29,6 +29,11 @@
     color: var(--light-green);
 }
 
+.navbar .navbar-nav .nav-link.active, .navbar-nav .nav-link.show  {
+    color: var(--green);
+    border-bottom: 3px solid var(--green);
+
+}
 .navbar-brand {
     font-weight: 600;
     font-size: 1.5rem;
@@ -86,8 +91,8 @@ label {
 }
 
 .filterBox .form-select:focus {
-    border-color: var(--green); /* Change this to your desired border color */
-    box-shadow: 0 0 0 0.25rem var(--light-green); /* Optional: add a focus shadow effect */
+    border-color: var(--green);
+    box-shadow: 0 0 0 0.25rem var(--light-green);
 }
 
 .hero-header {
@@ -123,11 +128,10 @@ label {
     color: var(--green);
 }
 
-.nav-link.active{
-    color: var(--green);
-
-    border-bottom: 3px solid var(--green);
+.bg-cream {
+    background-color: var(--cream);
 }
+
 
 footer{
     background-color: var(--cream);

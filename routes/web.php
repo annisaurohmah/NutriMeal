@@ -23,3 +23,6 @@ Route::get('/about', function () {
 Route::get('/foodpage', function () {
     return view('foodpage');
 })->name('foodpage');
+Route::post('/foodpage/result', function () {
+    return view('result');
+})->name('result');

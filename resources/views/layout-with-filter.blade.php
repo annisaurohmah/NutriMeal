@@ -14,7 +14,7 @@
 
     <div class="filter">
         <div class="filterBox container-xxl mx-auto">
-            <form method="POST" enctype="multipart/form-data" class="d-flex align-items-end row g-4 p-3">
+            <form method="POST" action="{{ route('result') }}" enctype="multipart/form-data" class="d-flex align-items-end row g-4 p-3">
                 @csrf
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="budget" class="form-label">Budget</label>
@@ -39,22 +39,13 @@
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="alergi" class="form-label">Alergi</label>
                     <select class="form-select" id="alergi" name="alergi">
-                        <option value="" selected disabled hidden>Alergi</option>
-                        <option value="1">Udang</option>
-                        <option value="2">Ayam</option>
-                        <option value="3">Protein Hewani</option>
-                        <option value="4">Susu</option>
-                        <option value="5">Telur</option>
+                        <option></option>
                     </select>
                 </div>
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="kandungan" class="form-label">Kandungan</label>
                     <select class="form-select" id="kandungan" name="kandungan">
-                        <option value="" selected disabled hidden >Kandungan</option>
-                        <option value="1">Protein</option>
-                        <option value="2">Karbohidrat</option>
-                        <option value="3">Vitamin C</option>
-                        <option value="4">Kalsium</option>
+                        <option></option>
                     </select>
                 </div>
                 <div class="col-md-2" style="flex: 0 0 20%;">
