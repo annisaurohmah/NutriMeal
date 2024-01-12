@@ -7,10 +7,18 @@
     <title>NutriMeal</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid ">
             <a class="navbar-brand" href="#">NutriMeal</a>
@@ -42,8 +50,9 @@
                 @csrf
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="budget" class="form-label">Budget</label>
-                    <select class="form-control" id="budget" name="budget" required>
-                    </select>
+                    <!-- <select class="form-control" id="budget" name="budget" required>
+                    </select> -->
+                    <input type="text" class="form-control" id="budget" name="budget">
                 </div>
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="activity" class="form-label">Activity</label>
@@ -51,11 +60,15 @@
                 </div>
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="alergi" class="form-label">Alergi</label>
-                    <input type="text" class="form-control" id="alergi" name="alergi">
+                    <select class="form-control" id="alergi" name="alergi" data-placeholder="Alergi" required >
+                        <option></option>
+                    </select>
                 </div>
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <label for="kandungan" class="form-label">Kandungan</label>
-                    <input type="text" class="form-control" id="kandungan" name="kandungan">
+                    <select class="form-control" id="kandungan" name="kandungan" data-placeholder="Kandungan" required>
+                        <option></option>
+                    </select>
                 </div>
                 <div class="col-md-2" style="flex: 0 0 20%;">
                     <button type="submit" class="btn btn-success" style="width: 100%">Search</button>
@@ -111,5 +124,7 @@
     </footer>
 
 </body>
+
+<script type="module" src="{{ asset('js/user/components.js') }}"></script>
 
 </html>

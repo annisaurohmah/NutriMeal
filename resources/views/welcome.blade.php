@@ -1,1 +1,0 @@
-<script type="module" src="{{ asset('js/user/average-meal-category.js') }}"></script>
